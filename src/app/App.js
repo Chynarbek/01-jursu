@@ -4,6 +4,8 @@ import Item from "../components/Item";
 import { Route } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import menu from '../data/Menu'
+import About from "../components/About";
+import Register from "../components/Register";
 
 const App = () => {
     console.log()
@@ -22,6 +24,12 @@ const App = () => {
                     </div>
 
 
+                </Route>
+                <Route path="/register">
+                    <Register />
+                </Route>
+                <Route path="/about">
+                    <About />
                 </Route>
                 <Route path="/product/:id" exact>
                     <Detail />
