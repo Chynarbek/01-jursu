@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = ({cart}) => {
     return (
-        <nav className="navbar navbar-expand navbar-light bg-light">
+        <nav  className="navbar navbar-expand navbar-light bg-dark">
             <div className="container">
                 <Link to="/" className="navbar-brand">Jutsu.kg</Link>
                 <ul className="navbar-nav">

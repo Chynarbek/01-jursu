@@ -1,28 +1,26 @@
 import React from 'react';
-import { reduxForm,Field } from 'redux-form';
+// import RegisterForm from './RegisterForm';
+import axios from "axios"
 
-const RegisterForm = ({HandleSubmit}) => {
+const Register = () => {
+
+    const submit =(values) =>{
+        axios.post("https://nurkadyrnur.pythonanywhere.com/auth/users",values)
+        .then(()=>{
+            alert("You are Success Registered")
+        }).catch(()=>{
+            alert("You have error? please correct errors")
+        })
+    }
+
     return (
-            <form onSubmit={HandleSubmit}>
-                <div>
-                    <label className="form-label" htmlFor="emailField">Email</label>
-                    <Field className="form-control" id="emailField" name="email" type="email" component="input" />
-                </div>
-                <div>
-                    <label className="form-label" htmlFor="emailField">UserName</label>
-                    <Field className="form-control" id="UserNameField" name="userName" type="UserName" component="input" />
-                </div >
-                <div>
-                    <label className="form-label" htmlFor="emailField">Password</label>
-                    <Field className="form-control" id="PasswordField" name="Password" type="Password" component="input" />
-                </div >
-                <button className="btn btn-primary mb-3" >
-                    Register
-                </button>
+        <div>
+            <h1 className="text-center">Register</h1>
+            <form action="">
+                {/* <RegisterForm onSubmit={submit}/> */}
             </form>
-        
+        </div>
     );
 };
 
-
-export default reduxForm({form:"Register"}) (RegisterForm);
+export default Register;

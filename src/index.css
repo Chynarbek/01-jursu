@@ -21,3 +21,11 @@ card-product {
 .cart-table {
   table-layout: fixed;
 }
+
+body {
+background-image:url(https://i0.wp.com/wp-corp.qoo-app.com/en/wp-content/uploads/sites/3/2020/04/20042710554639.jpg) ;
+background-repeat: no-repeat;
+}
+.navbar {
+color: black;
+}

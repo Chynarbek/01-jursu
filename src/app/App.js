@@ -5,7 +5,9 @@ import { Route } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import menu from '../data/Menu'
 import About from "../components/About";
+import Contacts from "../components/Contacts"
 import Register from "../components/Register";
+
 
 const App = () => {
     console.log()
